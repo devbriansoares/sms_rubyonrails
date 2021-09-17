@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
   end
  
   def create
-    SendSMS.new(params[:message], params[:number]).call
+    SendSms.new(params[:message], params[:number]).call
     redirect_to(action: 'new', notice: 'SMS enviado o/')
   end
 end

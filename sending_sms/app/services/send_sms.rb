@@ -1,4 +1,4 @@
-class SendSMS
+class SendSms
   attr_reader :message, :number
 
   def initialize(message, number)
